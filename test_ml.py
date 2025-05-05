@@ -29,10 +29,9 @@ def sample_data():
     """
     Load a small subset of census data for testing.
     """
-    project_path = os.path.expanduser("~")
+    project_path = os.getcwd()
     data_path = os.path.join(
         project_path,
-        "Deploying-a-Scalable-ML-Pipeline-with-FastAPI",
         "data",
         "census.csv"
     )
